@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ProjectTag from "./ProjectTag";
 import { ProjectCard } from "./ProjectCard";
+import { motion, useInView } from "framer-motion";
 
-const projectData = [
+const projectsData = [
   {
     id: 1,
     title: "CCT Project",
@@ -11,6 +12,7 @@ const projectData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
+    previewUrl: "/",
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ const projectData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
+    previewUrl: "/",
   },
   {
     id: 3,
@@ -27,6 +30,7 @@ const projectData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
+    previewUrl: "/",
   },
   {
     id: 4,
@@ -35,6 +39,7 @@ const projectData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
+    previewUrl: "/",
   },
   {
     id: 5,
@@ -43,6 +48,7 @@ const projectData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
+    previewUrl: "/",
   },
   {
     id: 6,
@@ -51,6 +57,7 @@ const projectData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
+    previewUrl: "/",
   },
   {
     id: 7,
@@ -59,6 +66,7 @@ const projectData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/7.png",
     tag: ["All", "Web"],
+    previewUrl: "/",
   },
   {
     id: 8,
@@ -67,18 +75,27 @@ const projectData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/8.png",
     tag: ["All", "Web"],
+    previewUrl: "/",
   },
 ];
 
 export const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
-  const filteredProjects = projectData.filter((project) =>
+
+  const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
   );
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
   return (
     <>
       <h2 className="text-center text-4xl font-bold text-white mt-40 mb-6">
@@ -101,17 +118,26 @@ export const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12 p-4">
-        {filteredProjects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            imgUrl={project.image}
-            tag={project.image}
-          />
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+        {filteredProjects.map((project, index) => (
+          <motion.li
+            key={index}
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            transition={{ duration: 0.3, delay: index * 0.4 }}
+          >
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              imgUrl={project.image}
+              gitUrl={project.gitUrl}
+              previewUrl={project.previewUrl}
+            />
+          </motion.li>
         ))}
-      </div>
+      </ul>
     </>
   );
 };

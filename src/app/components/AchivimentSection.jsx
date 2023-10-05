@@ -1,31 +1,40 @@
 "use client";
 import FlipNumbers from "react-flip-numbers";
-
-const achievementsList = [
-  {
-    metric: "Projects",
-    numbers: "10",
-    postfix: "+",
-  },
-  {
-    metric: "Users",
-    numbers: "10",
-  },
-  {
-    metric: "certificates",
-    numbers: "40",
-    postfix: "+",
-  },
-  {
-    metric: "Years",
-    numbers: "2",
-  },
-];
+import React, { useEffect, useState } from "react";
 
 const AchievementsSection = () => {
+  const [contador, setContador] = useState(0);
+  const achievementsList = [
+    {
+      metric: "Projects",
+      numbers: "10",
+      postfix: "+",
+    },
+    {
+      metric: "Users",
+      numbers: `${contador}`,
+    },
+    {
+      metric: "certificates",
+      numbers: "40",
+      postfix: "+",
+    },
+    {
+      metric: "Years",
+      numbers: "2",
+    },
+  ];
+  useEffect(() => {
+    // Lógica para obtener el contador de visitas (puedes usar localStorage)
+    const visitas = parseInt(localStorage.getItem("contadorVisitas")) || 0;
+    setContador(visitas);
+
+    // Incrementar el contador al cargar la página
+    localStorage.setItem("contadorVisitas", (visitas + 1).toString());
+  }, []);
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+      <div className="sm:border-[#33353F] sm:border rounded-3xl py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {achievementsList.map((achievement, index) => {
           return (
             <div
