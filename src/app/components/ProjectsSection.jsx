@@ -84,7 +84,7 @@ export const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-40 mb-6">
         My Projects
       </h2>
-      <div className=" text-white text-4xl z-50 font-bold flex flex-row justify-center items-center gap-2 py-6">
+      <div className=" text-white text-4xl z-0 font-bold flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           OnClick={handleTagChange}
           name="All"

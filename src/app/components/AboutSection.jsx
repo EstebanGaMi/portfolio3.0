@@ -13,9 +13,11 @@ import {
   BiLogoGit,
   BiLogoGithub,
   BiLogoBlender,
+  BiPlus,
 } from "react-icons/bi";
 import { TbBrandNextjs, TbBrandFigma, TbSchool } from "react-icons/tb";
 import { SiMysql, SiExpress } from "react-icons/si";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
@@ -95,7 +97,7 @@ const TAB_DATA = [
       <ul className="flex flex-wrap justify-center items-center gap-2">
         <li>
           <Image
-            src={"/images/1.png"}
+            src={"/images/certificates/1.png"}
             alt="certificado1"
             width={200}
             height={200}
@@ -103,7 +105,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/2.png"}
+            src={"/images/certificates/2.png"}
             alt="certificado2"
             width={200}
             height={200}
@@ -111,7 +113,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/3.png"}
+            src={"/images/certificates/3.png"}
             alt="certificado3"
             width={200}
             height={200}
@@ -119,7 +121,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/4.png"}
+            src={"/images/certificates/4.png"}
             alt="certificado4"
             width={200}
             height={200}
@@ -127,7 +129,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/5.png"}
+            src={"/images/certificates/5.png"}
             alt="certificado5"
             width={200}
             height={200}
@@ -135,7 +137,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/6.png"}
+            src={"/images/certificates/6.png"}
             alt="certificado6"
             width={200}
             height={200}
@@ -143,7 +145,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/7.png"}
+            src={"/images/certificates/7.png"}
             alt="certificado7"
             width={200}
             height={200}
@@ -151,7 +153,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/8.png"}
+            src={"/images/certificates/8.png"}
             alt="certificado8"
             width={200}
             height={200}
@@ -159,7 +161,7 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/9.png"}
+            src={"/images/certificates/9.png"}
             alt="certificado9"
             width={200}
             height={200}
@@ -167,11 +169,19 @@ const TAB_DATA = [
         </li>
         <li>
           <Image
-            src={"/images/10.png"}
+            src={"/images/certificates/10.png"}
             alt="certificado10"
             width={200}
             height={200}
           />
+        </li>
+        <li>
+          <Link
+            href="https://www.linkedin.com/in/esteban-garay-4baa94202/details/certifications/"
+            target="_blank"
+          >
+            <BiPlus className="text-6xl flex justify-center text-center items-center cursor-pointer ml-[100px] hover:text-purple-600" />{" "}
+          </Link>
         </li>
       </ul>
     ),
@@ -187,7 +197,7 @@ export const AboutSection = () => {
     });
   };
   return (
-    <section className="text-white">
+    <section className="text-white z-10">
       <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src={"/images/about.jpg"}

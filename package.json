@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "^13.5.4",
     "react": "latest",
     "react-dom": "latest",
+    "react-flip-numbers": "^3.0.8",
     "react-icons": "^4.11.0",
     "react-tsparticles": "^2.12.2",
     "react-type-animation": "^3.1.0",
@@ -22,7 +23,9 @@
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "framer-motion": "^10.16.4",
     "postcss": "latest",
+    "react-animated-numbers": "^0.16.0",
     "tailwindcss": "latest"
   }
 }
