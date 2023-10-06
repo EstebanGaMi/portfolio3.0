@@ -11,8 +11,8 @@ const AchievementsSection = () => {
       postfix: "+",
     },
     {
-      metric: "Users",
-      numbers: `${contador}`,
+      metric: "views",
+      numbers: `${1} ${contador}`,
     },
     {
       metric: "certificates",

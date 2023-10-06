@@ -8,7 +8,7 @@ import {
 
 function SocialNetworks() {
   return (
-    <div className="fixed lg:top-[400px] md:top-[500px] md:block ms:hidden right-0 transform -translate-y-1/2 rounded-3xl bg-green p-4 shadow-md bg-slate-50 bg-opacity-10 lg:mx-3">
+    <div className="fixed lg:top-[400px] md:top-[500px] hidden md:block ms:hidden right-0 transform -translate-y-1/2 rounded-3xl bg-green p-4 shadow-md bg-slate-50 bg-opacity-10 lg:mx-3 z-50">
       <div className="flex flex-col gap-6">
         <Link
           className="lg:text-4xl md:text-2xl hover:text-slate-200 text-[#ca60c8]"

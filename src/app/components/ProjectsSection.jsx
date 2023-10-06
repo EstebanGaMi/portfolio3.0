@@ -7,21 +7,21 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "CCT Project",
+    title: "DaleQueValen",
     description:
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl: "https://www.dalequevalen.com/",
   },
   {
     id: 2,
-    title: "Data Project",
+    title: "CCT Project",
     description:
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl: "https://dashing-sopapillas-760c5d.netlify.app/",
   },
   {
     id: 3,
@@ -29,53 +29,82 @@ const projectsData = [
     description:
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    previewUrl: "/",
+    tag: ["All", "Mobile"],
+    previewUrl: "/projects",
   },
   {
     id: 4,
-    title: "Conversor Project",
+    title: "Pomodoro Project",
     description:
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl:
+      "https://64a9d770bcf4a13f8bb0bf13--rad-duckanoo-7c71cb.netlify.app/",
   },
   {
     id: 5,
-    title: "Pomodoro Project",
+    title: "Calculator Project",
     description:
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl: "https://estebanportfolio20.netlify.app/pro4",
   },
   {
     id: 6,
-    title: "Calculator Project",
+    title: "Quiz Project",
     description:
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl:
+      "https://64a9d6cb2211464449251141--earnest-starlight-f4cee5.netlify.app/",
   },
   {
     id: 7,
-    title: "Quiz Project",
+    title: "Beta Game Project",
     description:
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/7.png",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl: "https://estebanportfolio20.netlify.app/pro2",
   },
   {
     id: 8,
-    title: "Beta Game Project",
+    title: "E-commerce model",
     description:
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/8.png",
     tag: ["All", "Web"],
-    previewUrl: "/",
+    previewUrl: "https://estebanportfolio20.netlify.app/pro7",
+  },
+  {
+    id: 9,
+    title: "Portfolio Project",
+    description:
+      "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
+    image: "/images/projects/10.png",
+    tag: ["All", "Web"],
+    previewUrl: "https://estebanportfolio20.netlify.app/",
+  },
+  {
+    id: 10,
+    title: "Currency converter",
+    description:
+      "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
+    image: "/images/projects/3.png",
+    tag: ["All", "Web"],
+    previewUrl: "/projects",
+  },
+  {
+    id: 11,
+    title: "Data Project",
+    description:
+      "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
+    image: "/images/projects/11.png",
+    tag: ["All", "Web"],
+    previewUrl: "https://estebanportfolio20.netlify.app/pro5",
   },
 ];
 

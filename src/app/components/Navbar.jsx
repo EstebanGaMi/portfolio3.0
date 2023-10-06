@@ -3,6 +3,11 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { NavLink } from "./NavLink";
 import { BsGridFill, BsGrid } from "react-icons/bs";
+import {
+  AiOutlineGithub,
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+} from "react-icons/ai";
 import { MenuOverlay } from "./MenuOverlay";
 import Image from "next/image";
 
@@ -70,6 +75,20 @@ export const Navbar = () => {
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      <section className="flex justify-around py-2 border border-slate-700 lg:border-none md:border-none">
+        <Link href="https://github.com/EstebanGaMi" target="_blank">
+          <AiOutlineGithub className=" text-2xl text-white lg:hidden md:hidden  hover:text-purple-500" />
+        </Link>
+        <Link href="https://www.instagram.com/_estebang23_/" target="_blank">
+          <AiOutlineInstagram className="text-2xl text-white lg:hidden md:hidden  hover:text-purple-500" />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/esteban-garay-4baa94202/"
+          target="_blank"
+        >
+          <AiOutlineLinkedin className="text-2xl text-white lg:hidden md:hidden hover:text-purple-500" />
+        </Link>
+      </section>
     </nav>
   );
 };
