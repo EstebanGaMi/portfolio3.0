@@ -12,7 +12,7 @@ const AchievementsSection = () => {
     },
     {
       metric: "views",
-      numbers: `${1} ${contador}`,
+      numbers: `${1}${contador}`,
     },
     {
       metric: "certificates",
@@ -21,7 +21,7 @@ const AchievementsSection = () => {
     },
     {
       metric: "Years",
-      numbers: "2",
+      numbers: "3",
     },
   ];
   useEffect(() => {
@@ -41,14 +41,14 @@ const AchievementsSection = () => {
               key={index}
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
-              <h2 className="text-white text-3xl font-bold flex flex-row ">
+              <h2 className="text-white text-3xl font-bold flex flex-row">
                 {achievement.prefix}
                 <FlipNumbers
-                  height={20}
-                  width={20}
+                  height={25}
+                  width={25}
                   color="white"
                   play
-                  perspective={100}
+                  perspective={150}
                   numbers={achievement.numbers}
                   delay={1}
                   duration={5}

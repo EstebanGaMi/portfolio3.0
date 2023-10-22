@@ -13,10 +13,6 @@ import Image from "next/image";
 
 const navLinks = [
   {
-    title: "Home",
-    path: "/",
-  },
-  {
     title: "About",
     path: "/about",
   },
@@ -33,18 +29,18 @@ const navLinks = [
 export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#121212] bg-opacity-95 ">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#1a1a1aa4] bg-opacity-95 ">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-6 py-2">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-2xl md:text-5xl text-white font-semibold my-[-40px] "
         >
           <Image
-            src={"/images/logo.svg"}
+            src={"/images/logo.png"}
             alt="logo"
-            className=" invert-[75%]"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
+            priority={true}
           />
         </Link>
         <div className=" mobile-menu block md:hidden">

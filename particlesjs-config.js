@@ -1,7 +1,7 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 110,
+      value: 60,
       density: {
         enable: true,
         value_area: 959.616153538585,
@@ -54,7 +54,7 @@ const particlesConfig = {
     },
     move: {
       enable: true,
-      speed: 6,
+      speed: 4,
       direction: "none",
       random: false,
       straight: false,
@@ -71,11 +71,11 @@ const particlesConfig = {
     detect_on: "canvas",
     events: {
       onhover: {
-        enable: true,
+        enable: false,
         mode: "repulse",
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       resize: true,

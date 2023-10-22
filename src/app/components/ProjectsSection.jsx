@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import ProjectTag from "./ProjectTag";
 import { ProjectCard } from "./ProjectCard";
 import { motion, useInView } from "framer-motion";
+import { getTechnologyColorClass, getTechnologyIcon } from "./ProjectCard";
 
 const projectsData = [
   {
@@ -12,6 +13,18 @@ const projectsData = [
       "Lorem ipsum dcepteur sint occaecat cupiicia deserunt mollit anim  est laborum.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
+    technologies: [
+      {
+        name: "React",
+        colorClass: getTechnologyColorClass("React"),
+        icon: getTechnologyIcon("React"),
+      },
+      {
+        name: "Next.js",
+        colorClass: getTechnologyColorClass("Next.js"),
+        icon: getTechnologyIcon("Next.js"),
+      },
+    ],
     previewUrl: "https://www.dalequevalen.com/",
   },
   {
