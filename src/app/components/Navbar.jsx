@@ -46,6 +46,7 @@ export const Navbar = () => {
         <div className=" mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
+              aria-label="gridButton"
               onClick={() => setNavbarOpen(true)}
               className=" flex items-center px-3 py-2 border-2 rounded border-slate-200 border-opacity-10 text-purple-500 hover:text-white hover:border-purple-500"
             >
@@ -72,15 +73,24 @@ export const Navbar = () => {
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
       <section className="flex justify-around py-2 border border-slate-700 lg:border-none md:border-none">
-        <Link href="https://github.com/EstebanGaMi" target="_blank">
+        <Link
+          href="https://github.com/EstebanGaMi"
+          target="_blank"
+          aria-label="this is my github"
+        >
           <AiOutlineGithub className=" text-2xl text-white lg:hidden md:hidden  hover:text-purple-500" />
         </Link>
-        <Link href="https://www.instagram.com/_estebang23_/" target="_blank">
+        <Link
+          href="https://www.instagram.com/_estebang23_/"
+          target="_blank"
+          aria-label="this is my instagram"
+        >
           <AiOutlineInstagram className="text-2xl text-white lg:hidden md:hidden  hover:text-purple-500" />
         </Link>
         <Link
           href="https://www.linkedin.com/in/esteban-garay-4baa94202/"
           target="_blank"
+          aria-label="this is my linkedin"
         >
           <AiOutlineLinkedin className="text-2xl text-white lg:hidden md:hidden hover:text-purple-500" />
         </Link>
