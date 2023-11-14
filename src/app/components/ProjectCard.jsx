@@ -14,6 +14,9 @@ import {
 } from "react-icons/bi";
 import { TbBrandNextjs, TbBrandFigma } from "react-icons/tb";
 import { SiMysql, SiExpress } from "react-icons/si";
+import { IoLogoJavascript, IoLogoSass } from "react-icons/io5";
+
+// ... (imports)
 
 export const ProjectCard = ({
   imgUrl,
@@ -35,7 +38,7 @@ export const ProjectCard = ({
           <Link
             href={previewUrl}
             target="_blank"
-            className="h-full w-full "
+            className="h-full w-full"
           ></Link>
         </div>
       </div>
@@ -43,18 +46,22 @@ export const ProjectCard = ({
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
         {technologies && technologies.length > 0 && (
-          <ul className="text-6xl flex gap-5 flex-wrap">
+          <div className="flex flex-wrap gap-2 mt-4">
             {technologies.map((tech) => (
-              <li key={tech.name} className={tech.colorClass}>
-                {tech.icon}
-              </li>
+              <div
+                key={tech.name}
+                className={`flex items-center ${tech.colorClass}`}
+              >
+                {tech.icon} <span className="ml-2">{tech.name}</span>
+              </div>
             ))}
-          </ul>
+          </div>
         )}
       </div>
     </div>
   );
 };
+
 export function getTechnologyColorClass(tech) {
   switch (tech) {
     case "React":
@@ -76,17 +83,21 @@ export function getTechnologyColorClass(tech) {
     case "MySQL":
       return "text-[#00718b]";
     case "Express":
-      return ""; // Define la clase de color para Express si lo deseas
+      return "";
     case "Git":
       return "text-[#f54d27]";
     case "GitHub":
-      return ""; // Define la clase de color para GitHub si lo deseas
+      return "";
     case "Blender":
       return "text-[#e37200]";
     case "Figma":
-      return ""; // Define la clase de color para Figma si lo deseas
+      return "";
     default:
-      return ""; // Devuelve una clase por defecto si la tecnología no se encuentra
+      return "";
+    case "JavaScript":
+      return "text-[#f2ff00]";
+    case "Sass":
+      return "text-[#ff00ff]";
   }
 }
 export function getTechnologyIcon(tech) {
@@ -110,16 +121,20 @@ export function getTechnologyIcon(tech) {
     case "MySQL":
       return <SiMysql />;
     case "Express":
-      return <SiExpress />; // Define el icono para Express si lo deseas
+      return <SiExpress />;
     case "Git":
       return <BiLogoGit />;
     case "GitHub":
-      return <BiLogoGithub />; // Define el icono para GitHub si lo deseas
+      return <BiLogoGithub />;
     case "Blender":
       return <BiLogoBlender />;
     case "Figma":
-      return <TbBrandFigma />; // Define el icono para Figma si lo deseas
+      return <TbBrandFigma />;
+    case "JavaScript":
+      return <IoLogoJavascript />;
+    case "Sass":
+      return <IoLogoSass />;
     default:
-      return null; // Devuelve null si el icono no se encuentra
+      return null;
   }
 }
