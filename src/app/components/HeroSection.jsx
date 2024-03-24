@@ -25,7 +25,7 @@ export const HeroSection = () => {
                 1000,
                 "Developer",
                 1000,
-                "Electromechanic",
+                "Electro mechanic",
                 1000,
                 "3D Designer",
                 1000,
