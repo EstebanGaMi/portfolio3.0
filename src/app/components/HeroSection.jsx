@@ -15,7 +15,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start "
         >
-          <h1 className="text-white mb-4 text-4xl lg:text-6xl sm:text-5xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-4xl lg:text-5xl sm:text-3xl lg:leading-normal font-extrabold">
             <div className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello, I'm{" "}
             </div>
@@ -23,7 +23,7 @@ export const HeroSection = () => {
               sequence={[
                 "Esteban Garay",
                 1000,
-                "Web Developer",
+                "Developer",
                 1000,
                 "Electromechanic",
                 1000,

@@ -24,7 +24,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="text-6xl flex gap-5 flex-wrap">
+      <ul className="text-5xl flex gap-5 flex-wrap">
         <li className="text-[#03f4fc]">
           <BiLogoReact />
         </li>
@@ -198,22 +198,22 @@ export const AboutSection = () => {
   };
   return (
     <section className="text-white z-10">
-      <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-8 xl:px-16">
         <Image
-          src={"/images/about.jpg"}
+          src={"/images/about.png"}
           alt="about"
           className="rounded-lg"
-          width={550}
-          height={550}
+          width={300}
+          height={350}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Me
             </span>{" "}
           </h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-xm">
             I'm 23 years old, I am a Junior Web Developer and electromechanical
             technician, currently in constant training in the programming area
             and I am looking for a job in the IT area. On the other hand, I am
