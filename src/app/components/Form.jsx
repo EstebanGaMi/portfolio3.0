@@ -26,7 +26,7 @@ export const Form = () => {
       action="https://formspree.io/f/xjvqpzrl"
       method="POST"
       onSubmit={handleSubmit}
-      className="text-2xl flex flex-col pt-60 gap-5 justify-center items-center text-white"
+      className="text-2xl flex flex-col mt-[120px] gap-5 justify-center items-center text-white"
     >
       <input
         className="z-20 w-3/6 h-10 rounded-xl text-center justify-center bg-purple-600 bg-opacity-20 hover:bg-pink-500 hover:bg-opacity-20 border"
