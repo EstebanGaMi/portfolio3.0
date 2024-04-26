@@ -36,10 +36,11 @@ export const Navbar = () => {
           className="text-2xl md:text-5xl text-white font-semibold my-[-40px] "
         >
           <Image
+            className="mt-5 mb-2 invert-[60%]"
             src={"/images/logo.png"}
             alt="logo"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             priority={true}
           />
         </Link>

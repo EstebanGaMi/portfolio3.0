@@ -3,7 +3,7 @@ import { Navbar } from "../components/Navbar";
 
 const Projects = () => {
   return (
-    <section className="flex min-h-screen flex-col bg-gradient-to-r from-black via-purple-900 to-pink-900">
+    <section className="flex min-h-screen flex-col">
       <Navbar />
       <ProjectsSection />
     </section>

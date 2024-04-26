@@ -26,7 +26,7 @@ export const ProjectCard = ({
   technologies,
 }) => {
   return (
-    <div className="shadow-xl shadow-black rounded-xl cursor-pointer">
+    <div className="shadow-xl shadow-black rounded-xl cursor-pointer flex flex-col gap-[2px] my-auto mx-1">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{

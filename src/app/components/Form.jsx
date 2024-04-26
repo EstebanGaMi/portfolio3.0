@@ -43,7 +43,7 @@ export const Form = () => {
         id="email"
       />
       <textarea
-        className="z-20 w-3/6 h-60 rounded-xl text-center justify-center bg-purple-500 bg-opacity-20 hover:bg-pink-500 hover:bg-opacity-20"
+        className="z-20 w-3/6 h-60 rounded-xl text-center justify-center bg-purple-500 bg-opacity-20 hover:bg-pink-500 hover:bg-opacity-20 resize-none"
         placeholder="Message"
         name="message"
         id="message"
