@@ -22,26 +22,27 @@ const navLinks = [
   },
   {
     title: "Contact",
-    path: "contact",
+    path: "/contact",
   },
 ];
 
 export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#1a1a1aa4] bg-opacity-95 ">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#3e0f5aa4] bg-opacity-95 ">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-6 py-2">
         <Link
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold my-[-40px] "
         >
           <Image
-            className="mt-5 mb-2 invert-[60%]"
-            src={"/images/logo.png"}
+            className="mt-5 mb-2 invert-[60%] md:w-28 w-16"
+            src={"/images/logo.webp"}
             alt="logo"
             width={100}
             height={100}
-            priority={true}
+            // style={{ width: "auto", height: "auto" }}
+            priority
           />
         </Link>
         <div className=" mobile-menu block md:hidden">

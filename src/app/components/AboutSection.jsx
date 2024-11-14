@@ -94,85 +94,115 @@ const TAB_DATA = [
     title: "certifications",
     id: "certifications",
     content: (
-      <ul className="flex flex-wrap justify-center items-center gap-2">
+      <ul className="grid grid-cols-6 gap-4">
         <li>
           <Image
-            src={"/images/certificates/1.png"}
+            src={"/images/certificates/1.webp"}
             alt="certificado1"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/2.png"}
+            src={"/images/certificates/2.webp"}
             alt="certificado2"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/3.png"}
+            src={"/images/certificates/3.webp"}
             alt="certificado3"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/4.png"}
+            src={"/images/certificates/4.webp"}
             alt="certificado4"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/5.png"}
+            src={"/images/certificates/5.webp"}
             alt="certificado5"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/6.png"}
+            src={"/images/certificates/6.webp"}
             alt="certificado6"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/7.png"}
+            src={"/images/certificates/7.webp"}
             alt="certificado7"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/8.png"}
+            src={"/images/certificates/8.webp"}
             alt="certificado8"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/9.png"}
+            src={"/images/certificates/9.webp"}
             alt="certificado9"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
           <Image
-            src={"/images/certificates/10.png"}
+            src={"/images/certificates/10.webp"}
             alt="certificado10"
             width={200}
             height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
+          />
+        </li>
+        <li>
+          <Image
+            src={"/images/certificates/11.webp"}
+            alt="certificado10"
+            width={200}
+            height={200}
+            style={{ width: "auto", height: "auto" }}
+            priority
           />
         </li>
         <li>
@@ -180,7 +210,7 @@ const TAB_DATA = [
             href="https://www.linkedin.com/in/esteban-garay-4baa94202/details/certifications/"
             target="_blank"
           >
-            <BiPlus className="text-6xl flex justify-center text-center items-center cursor-pointer ml-[100px] hover:text-purple-600" />{" "}
+            <BiPlus className="text-6xl sm:text-4xl flex justify-center text-center items-center cursor-pointer hover:text-purple-600" />
           </Link>
         </li>
       </ul>
@@ -200,11 +230,13 @@ export const AboutSection = () => {
     <section className="text-white z-10">
       <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-8 xl:px-16">
         <Image
-          src={"/images/about.png"}
+          src={"/images/about.webp"}
           alt="about"
-          className="rounded-lg"
+          className="rounded-lg max-w-full h-auto mx-auto md:mx-0"
           width={300}
           height={350}
+          style={{ width: "auto", height: "auto" }}
+          priority
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-3xl font-bold text-white mb-4">

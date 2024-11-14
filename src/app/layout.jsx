@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-[#181818]">
-        <Cover />
+        {/* <Cover /> */}
         {children}
       </body>
     </html>

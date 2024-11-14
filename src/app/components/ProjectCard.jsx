@@ -26,12 +26,14 @@ export const ProjectCard = ({
   technologies,
 }) => {
   return (
-    <div className="shadow-xl shadow-black rounded-xl cursor-pointer flex flex-col gap-[2px] my-auto mx-1">
+    <div className="shadow-xl shadow-black rounded-xl cursor-pointer flex flex-col gap-[2px] my-auto mx-1 w-full h-[450px]">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{
-          background: `url(${imgUrl})`,
-          backgroundSize: "100% 100%",
+          backgroundImage: `url(${imgUrl})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 group-hover:rounded-t-xl transition-all duration-500">
@@ -42,7 +44,7 @@ export const ProjectCard = ({
           ></Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl bg-[#6d6d6d] py-6 px-4">
+      <div className="text-white rounded-b-xl bg-[#6d6d6d] py-6 px-4 h-full">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
         {technologies && technologies.length > 0 && (

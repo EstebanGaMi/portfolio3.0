@@ -17,9 +17,10 @@ export const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl lg:text-5xl sm:text-3xl lg:leading-normal font-extrabold">
             <div className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Hello, I'm{" "}
+              Hello,I'm{" "}
             </div>
             <TypeAnimation
+              className="text-2xl lg:text-3xl sm:text-xl"
               sequence={[
                 "Esteban Garay",
                 1000,
@@ -29,6 +30,8 @@ export const HeroSection = () => {
                 1000,
                 "3D Designer",
                 1000,
+                "Systems Eng",
+                1000,
               ]}
               wrapper="span"
               speed={50}
@@ -36,13 +39,18 @@ export const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 ">
-            Im 23 years old, I am a Junior Web Developer and electromechanical
+            Passionate about problem-solving and creating intuitive solutions,
+            I’m a web developer with a background in electromechanics, focused
+            on building functional applications. With hands-on project
+            experience, I combine structured logic and creativity to design and
+            optimize websites. I enjoy learning new technologies and applying
+            them in real-world scenarios to deliver tangible value.
           </p>
 
           <div>
-            <Link href="/about">
+            <Link href="/projects">
               <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-600 via-purple-800 to-pink-600 hover:bg-slate-200 text-white">
-                About Mi
+                Projects
               </button>
             </Link>
             <a href="./cv.pdf" download={""}>

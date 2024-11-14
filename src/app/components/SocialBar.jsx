@@ -12,7 +12,7 @@ function SocialNetworks() {
       <div className="flex flex-col gap-6">
         <Link
           className="lg:text-4xl md:text-2xl hover:text-slate-200 text-[#ca60c8]"
-          href={"https://wa.me/911197526"}
+          href={"https://wa.me/2616105602"}
           target="_blank"
         >
           <AiOutlineWhatsApp />
