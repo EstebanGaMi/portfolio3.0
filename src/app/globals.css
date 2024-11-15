@@ -1,6 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Estilos comunes */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo oscuro */
+html.dark {
+  background-color: #161616;
+  color: rgb(255, 255, 255);
+}
+
+/* Modo claro */
+html.light {
+  background-color: #ffe4f7;
+  color: black;
+}
+
+/* Puedes añadir más estilos para los diferentes elementos de tu página */
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 body {
   overflow-x: hidden;
 }
